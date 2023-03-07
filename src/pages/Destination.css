@@ -1,0 +1,8 @@
+body{
+    color: whitesmoke;
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 100vh;
+}

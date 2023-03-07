@@ -1,0 +1,29 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  align-items: center;
+  max-width: 100%;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+}
+a:focus {
+    
+  border-bottom: 3px solid white;
+}
+
+.navigation-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 45%;
+  backdrop-filter: blur(30px);
+  
+}
+
+span {
+  font-weight: bold;
+}
