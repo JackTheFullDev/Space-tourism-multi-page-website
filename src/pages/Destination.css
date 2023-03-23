@@ -1,8 +1,84 @@
-body{
-    color: whitesmoke;
-    background-image: url("./assets/destination/background-destination-desktop.jpg");
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position: center;
-    height: 100vh;
+*
+{
+    box-sizing: border-box;
 }
+#welcome-destination
+{
+    font-size: 30px;
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.destionation-container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    gap: 50px;
+}
+a
+{
+    cursor: pointer;
+}
+hr
+{   margin-top: 40px;
+    width: 100%;
+}
+
+.distance-bottom-content
+{
+    display: flex;
+    gap: 100px;
+}
+.destionation-right-content
+{
+    max-width: 600px;
+    text-align: left;
+}
+.info-p-destination
+{
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.info-p-time
+{
+    margin-top: 5px;
+    font-size: 24px;
+    text-transform: uppercase;
+    
+}
+@media only screen  and (max-width:900px)
+{
+    .destionation-container img 
+    {
+        max-width: 300px;
+    }
+    .destionation-container h1
+    {
+        font-size: 100px;
+    }
+    .destionation-right-content
+    {
+        max-width: 400px;
+    }
+}
+@media only screen  and (max-width:420px) {
+    .destionation-container
+    {
+        flex-direction: column;
+        height: 65vh;
+        align-items: center;
+        
+    }
+    ul{
+        display: flex
+    }
+    .destionation-container img{
+        height: 230px;
+    }
+}
+

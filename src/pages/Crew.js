@@ -1,7 +1,7 @@
 import './Crew.css'
 export const Crew = () =>
 {
-return<div>
+return<div className="crew">
  CREW
 </div>
 }
