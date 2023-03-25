@@ -25,8 +25,8 @@ export const Destination = (destinationData) => {
           <ul>
             <a onClick={() => {changePlanet(planetData[0],Moon)}}>Moon</a>
             <a onClick={() => {changePlanet(planetData[1],Mars)}}>Mars</a>
-            <a onClick={() => {changePlanet(planetData[2],Titan)}}>Europa</a>
-            <a onClick={() => {changePlanet(planetData[3],Mars)}}>Titan</a>
+            <a onClick={() => {changePlanet(planetData[2],Europa)}}>Europa</a>
+            <a onClick={() => {changePlanet(planetData[3],Titan)}}>Titan</a>
           </ul>
           <div className="planet-info">
             <h1>{planet.name}</h1>

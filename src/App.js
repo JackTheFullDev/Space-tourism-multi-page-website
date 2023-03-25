@@ -12,6 +12,7 @@ import { useState } from "react";
 import homePageImg from "./pages/assets/home/background-home-desktop.jpg"
 import { Technology } from './pages/Technology';
 import dataJson from './data.json';
+import {sliderCrew} from './pages/CrewSlider';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/> }/>
         <Route path="/destination" element={<Destination destinationData={dataJson.destinations}/> } />
-        <Route path="/crew" element={<Crew/> }/>
+        <Route path="/crew" element={<Crew crewData={dataJson.crew}/> }/>
         <Route path="/technology" element={<Technology/> }/>
       </Routes>
       </Router>

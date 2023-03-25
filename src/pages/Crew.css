@@ -1,0 +1,13 @@
+
+.crew-member
+{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.crew-member:hover
+{
+    cursor: pointer;
+}
