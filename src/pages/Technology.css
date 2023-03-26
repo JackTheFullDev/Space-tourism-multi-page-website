@@ -5,11 +5,11 @@ height: 80vh;
 .main-technology-container
 {
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: 1fr 2fr 2fr;
     height: 100%;
-    max-width: 100%;
-    gap: 100px;
-    
+    gap: 50px;
+    max-width: 70%;
+    margin: 0 auto;
 }
 .buttons-technology-switch
 {
@@ -19,6 +19,7 @@ height: 80vh;
     align-items: center;
     gap: 30px;
     
+    
 }
 .switcher-technology
 {
@@ -26,11 +27,15 @@ height: 80vh;
     height: 80px;
     width: 80px;
     cursor: pointer;
+    background-color: transparent;
+    color: white;
 }
-.switcher-technology:active
+button.active
 {
     transform: translateY(-3px);
-    transition:  .3s ease;
+    transition:  .5s ease;
+    background-color: whitesmoke;
+    color: black;
     
 }
 .text-technology
@@ -41,19 +46,39 @@ height: 80vh;
     align-items: center;
     justify-content: center;
     text-align: justify;
+    
 }
 .img-technology
 {
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .img-technology img
 {
-    height: 60%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
 }
 
 #title-technology
 {
  text-transform: uppercase;
+ font-weight: 100;
+ letter-spacing: 2px;
+ text-align: start;
+ 
+}
+#name-technology
+{
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight:lighter;
+    
+}
+#description-technology
+{
+margin-top: 14px;
 }
