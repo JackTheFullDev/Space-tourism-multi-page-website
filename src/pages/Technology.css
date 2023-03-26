@@ -4,5 +4,56 @@ height: 80vh;
 }
 .main-technology-container
 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    height: 100%;
+    max-width: 100%;
+    gap: 100px;
     
+}
+.buttons-technology-switch
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.switcher-technology
+{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+.switcher-technology:active
+{
+    transform: translateY(-3px);
+    transition:  .3s ease;
+    
+}
+.text-technology
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+.img-technology
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-technology img
+{
+    height: 60%;
+}
+
+#title-technology
+{
+ text-transform: uppercase;
 }
