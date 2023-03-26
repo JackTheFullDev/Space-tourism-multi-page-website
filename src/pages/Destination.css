@@ -5,12 +5,12 @@
 
 .destionation-container
 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     display: flex;
-    gap: 50px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 100px;
 }
 a
 {
@@ -28,8 +28,20 @@ hr
 }
 .destionation-right-content
 {
-    max-width: 600px;
+    max-width: 500px;
     text-align: left;
+}
+.destionation-left-content
+{
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+}
+.destionation-left-content  img
+{
+    max-width: 100%;
+    
+    
 }
 .info-p-destination
 {

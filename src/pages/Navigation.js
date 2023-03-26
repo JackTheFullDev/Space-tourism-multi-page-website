@@ -1,37 +1,27 @@
 import "./comp-style.css";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import iconclosed from "./assets/shared/icon-close.svg";
+import { Link } from "react-router-dom";
 import iconhamburger from "./assets/shared/icon-hamburger.svg";
 import iconlogo from "./assets/shared/logo.svg";
 import destinationPageImg from "./assets/destination/background-destination-desktop.jpg";
 import crewPageImg from "./assets/crew/background-crew-desktop.jpg";
 import HomePageImg from "./assets/home/background-home-desktop.jpg";
 import TechnologyPageImg from "./assets/technology/background-technology-desktop.jpg";
-import { useState,useRef,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export const Navigation = ({ changeImg }) => {
-  const [isMobile, setIsMobile] = useState(false);
-  const ref =useRef(null);// create here statte that i press outside div menu is closed
- 
-
-  useEffect(()=>
-  {
-    function handleClickOutside(event)
-    {
-      if(ref.current&&!ref.current.contains(event.target)||isMobile!=true)//here sth to protect overtime 
-      {
-        console.log("clicket outside" )
-        console.log("what is: " +isMobile)
-        setIsMobile(false);
-      }
-    }
-    document.addEventListener("mousedown",handleClickOutside);
-    return()=>
-    {
-      document.removeEventListener("mousedown",handleClickOutside)
-    }
-  },[ref])
- 
+  const [isMobile, setIsMobile] = useState(true);
+  const [navNumber, setNavNumber] = useState(1);
+  const handleNavNumber = (number) => {
+    setNavNumber(number);
+  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(true);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="nav-container">
       <div>
@@ -42,19 +32,47 @@ export const Navigation = ({ changeImg }) => {
       </div>
       <div
         className={
-          isMobile ? "navigation-content-mobile" : "navigation-content"}
-          ref={ref}
+          isMobile ? "navigation-content" : "navigation-content-mobile"
+        }
       >
-        <Link to="/" onClick={() => changeImg(HomePageImg)}>
+        <Link
+          to="/"
+          onClick={() => {
+            changeImg(HomePageImg);
+            handleNavNumber(1);
+          }}
+          className={navNumber === 1 ? "active" : null}
+        >
           <span>00 </span> Home
         </Link>
-        <Link to="/destination" onClick={() => changeImg(destinationPageImg)}>
+        <Link
+          to="/destination"
+          onClick={() => {
+            changeImg(destinationPageImg);
+            handleNavNumber(2);
+          }}
+          className={navNumber === 2 ? "active" : null}
+        >
           <span>01 </span>Destination
         </Link>
-        <Link to="/crew" onClick={() => changeImg(crewPageImg)}>
+        <Link
+          to="/crew"
+          onClick={() => {
+            changeImg(crewPageImg);
+            handleNavNumber(3);
+          }}
+          className={navNumber === 3 ? "active" : null}
+        >
           <span>02 </span>Crew
         </Link>
-        <Link to="/technology" onClick={() => changeImg(TechnologyPageImg)}>
+        <Link
+          to="/technology"
+          onClick={() => {
+            changeImg(TechnologyPageImg);
+            handleNavNumber(4);
+          }}
+          className={navNumber === 4 ? "active" : null}
+        >
           <span>03 </span>Technology
         </Link>
       </div>
@@ -64,7 +82,6 @@ export const Navigation = ({ changeImg }) => {
           src={iconhamburger}
           onClick={() => {
             setIsMobile(!isMobile);
-            console.log(isMobile);
           }}
         />
       </div>

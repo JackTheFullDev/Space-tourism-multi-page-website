@@ -10,7 +10,7 @@ a {
   text-decoration: none;
   padding: 30px;
 }
-a:focus {
+a.active {
   border-bottom: 3px solid white;
 }
 a:hover {
@@ -50,8 +50,8 @@ span {
     padding-top: 40px;
     background: hsl(0, 0%, 100%, 0.1);
     backdrop-filter: blur(1rem);
-   
-    
+    z-index: 10;
+    display: block;
   }
   a {
     width: 100%;
@@ -61,6 +61,7 @@ span {
     display: flex;
     position: fixed;
     right: 40px;
+    z-index: 10;
   }
   #hamburger {
     display: block;
