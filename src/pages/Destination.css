@@ -2,15 +2,7 @@
 {
     box-sizing: border-box;
 }
-#welcome-destination
-{
-    font-size: 30px;
-    position: absolute;
-    top: 16%;
-    left: 10%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
+
 .destionation-container
 {
     position: absolute;
@@ -50,6 +42,10 @@ hr
     font-size: 24px;
     text-transform: uppercase;
     
+}
+.number-page-span
+{
+ color: rgb(153, 153, 153);
 }
 @media only screen  and (max-width:900px)
 {

@@ -1,13 +1,83 @@
 
+
 .crew-member
 {
     
-    display: flex;
-    justify-content: space-evenly;
+   display: flex;
+  
+    width: 90%;
+    justify-content: space-between;
+    height: 83vh;
     align-items: center;
 }
 
+.crew-member img
+{
+    width: 60%;
+    object-fit: contain;
+}
+.crew-member div
+{
+    width: 40%;
+    
+}
 .crew-member:hover
 {
     cursor: pointer;
+}
+.profession
+{
+    font-weight: bold;
+    font-size: 26px;
+    color:rgb(153, 153, 153);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.name
+{
+    font-size: 42px;
+    letter-spacing: 4px;
+    line-height: 40px;
+    margin-bottom: 50px;
+   
+}
+.swiper
+{
+    max-width: 75%; 
+}
+.crew-member img
+{
+    width: 40%;
+}
+
+
+
+@media  (width<800px){
+    .crew-member
+    {
+        height: 75vh;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        
+    }
+
+    .profession
+    {
+        font-size: 16px;
+        
+    }
+    .name
+    {
+        margin: 0;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .person-description
+    {
+        font-size: 10px;
+    }
+    
 }

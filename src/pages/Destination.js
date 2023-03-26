@@ -15,7 +15,7 @@ export const Destination = (destinationData) => {
   };
   return (
     <div className="destionation">
-      <p id="welcome-destination"> 01 Pick your destination</p>
+      <p className="hello-page-p"> <span className="number-page-span">01</span> Pick your destination</p>
       <section className="destionation-container">
         <div className="destionation-left-content">
           <img src={planetImg} alt="planet-img" />
@@ -45,6 +45,7 @@ export const Destination = (destinationData) => {
           </div>
         </div>
       </section>
+      
     </div>
   );
 };

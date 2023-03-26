@@ -12,7 +12,7 @@ import { useState } from "react";
 import homePageImg from "./pages/assets/home/background-home-desktop.jpg"
 import { Technology } from './pages/Technology';
 import dataJson from './data.json';
-import {sliderCrew} from './pages/CrewSlider';
+
 
 
 function App() {

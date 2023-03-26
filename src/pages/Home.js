@@ -1,4 +1,5 @@
 import './Home.css'
+import './style.css'
 
 export const Home = () =>
 {
@@ -15,6 +16,7 @@ return<div className='home' >
   <p> Explore</p>
 </div>
 </section>
+
 
 </div>
 }

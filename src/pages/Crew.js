@@ -19,8 +19,8 @@ export const Crew = (crewData) =>
    
   
 return<div className="crew">
-  <p>02 Meet Your Creew</p>
-
+  <p className='hello-page-p'><span className='number-page-span'>02</span> Meet Your Creew</p>
+  
     <Swiper
         spaceBetween={30}
         pagination={{
@@ -71,6 +71,5 @@ return<div className="crew">
         </div>
         </SwiperSlide>
       </Swiper>
-  
-</div>
+      </div>
 }
