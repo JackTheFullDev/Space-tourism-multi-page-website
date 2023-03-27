@@ -29,6 +29,8 @@ height: 80vh;
     cursor: pointer;
     background-color: transparent;
     color: white;
+    font-size: 18px;
+    font-weight:bold;
 }
 button.active
 {
