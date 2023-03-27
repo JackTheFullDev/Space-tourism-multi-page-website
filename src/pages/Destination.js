@@ -18,7 +18,7 @@ export const Destination = (destinationData) => {
       <p className="hello-page-p"> <span className="number-page-span">01</span> Pick your destination</p>
       <section className="destionation-container">
         <div className="destionation-left-content">
-          <img src={planetImg} alt="planet-img" />
+          <img id="planet-img"src={planetImg} alt="planet-img" />
     
         </div>
         <div className="destionation-right-content">

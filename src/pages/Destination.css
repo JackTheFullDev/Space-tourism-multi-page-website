@@ -59,11 +59,10 @@ hr
 {
  color: rgb(153, 153, 153);
 }
-@media only screen  and (max-width:900px)
+@media only screen  and (max-width:820px)
 {
-    .destionation-container img 
-    {
-        max-width: 300px;
+    .destionation-container{
+        gap: 10px;
     }
     .destionation-container h1
     {
@@ -74,12 +73,19 @@ hr
         max-width: 400px;
     }
 }
-@media only screen  and (max-width:420px) {
+@media only screen  and (max-width:600px) {
+    #planet-img{
+        height: 100%;
+    }
     .destionation-container
     {
         flex-direction: column;
-        height: 65vh;
-        align-items: center;
+        gap: 0;
+        
+    }
+    .destionation-left-content
+    {
+        height: 100px;
         
     }
     ul{
@@ -87,6 +93,14 @@ hr
     }
     .destionation-container img{
         height: 230px;
+    }
+    .planet-info
+    {
+        text-align: center;
+    }
+    .planet-info h1{
+        font-size: 65px;
+       
     }
 }
 
