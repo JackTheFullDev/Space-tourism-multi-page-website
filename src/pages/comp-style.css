@@ -38,6 +38,15 @@ span {
 }
 
 @media only screen and (max-width: 420px) {
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(90%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
   .navigation-content {
     display: none;
   }
@@ -52,6 +61,9 @@ span {
     backdrop-filter: blur(1rem);
     z-index: 10;
     display: block;
+    animation: slideInRight 0.3s ease-in-out ;
+   
+    
   }
   a {
     width: 100%;

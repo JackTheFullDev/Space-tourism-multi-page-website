@@ -28,7 +28,7 @@ hr
 }
 .destionation-right-content
 {
-    max-width: 500px;
+    max-width: 30%;
     text-align: left;
 }
 .destionation-left-content
@@ -70,10 +70,14 @@ hr
     }
     .destionation-right-content
     {
-        max-width: 400px;
+        max-width: 100%;
     }
 }
 @media only screen  and (max-width:600px) {
+    .destionation-right-content
+    {
+        max-width: 100%;
+    }
     #planet-img{
         height: 100%;
     }
