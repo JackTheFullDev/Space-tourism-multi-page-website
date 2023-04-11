@@ -1,8 +1,7 @@
-.hello-page-p
-{
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.hello-page-p {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }

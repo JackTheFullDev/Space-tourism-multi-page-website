@@ -9,24 +9,50 @@ export const Destination = (destinationData) => {
   const planetData = destinationData.destinationData;
   const [planet, setPlanet] = useState(planetData[0]);
   const [planetImg, setPlanetImg] = useState(Moon);
-  const changePlanet = (dataPlanet,imgPlanet) => {
+  const changePlanet = (dataPlanet, imgPlanet) => {
     setPlanet(dataPlanet);
     setPlanetImg(imgPlanet);
   };
   return (
     <div className="destionation">
-      <p className="hello-page-p"> <span className="number-page-span">01</span> Pick your destination</p>
+      <p className="hello-page-p">
+        {" "}
+        <span className="number-page-span">01</span> Pick your destination
+      </p>
       <section className="destionation-container">
         <div className="destionation-left-content">
-          <img id="mn"src={planetImg} alt="planet-img" />
-    
+          <img id="mn" src={planetImg} alt="planet-img" />
         </div>
         <div className="destionation-right-content">
           <ul>
-            <a onClick={() => {changePlanet(planetData[0],Moon)}}>Moon</a>
-            <a onClick={() => {changePlanet(planetData[1],Mars)}}>Mars</a>
-            <a onClick={() => {changePlanet(planetData[2],Europa)}}>Europa</a>
-            <a onClick={() => {changePlanet(planetData[3],Titan)}}>Titan</a>
+            <a
+              onClick={() => {
+                changePlanet(planetData[0], Moon);
+              }}
+            >
+              Moon
+            </a>
+            <a
+              onClick={() => {
+                changePlanet(planetData[1], Mars);
+              }}
+            >
+              Mars
+            </a>
+            <a
+              onClick={() => {
+                changePlanet(planetData[2], Europa);
+              }}
+            >
+              Europa
+            </a>
+            <a
+              onClick={() => {
+                changePlanet(planetData[3], Titan);
+              }}
+            >
+              Titan
+            </a>
           </ul>
           <div className="planet-info">
             <h1>{planet.name}</h1>
@@ -45,7 +71,6 @@ export const Destination = (destinationData) => {
           </div>
         </div>
       </section>
-      
     </div>
   );
 };
